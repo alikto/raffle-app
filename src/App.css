@@ -1,0 +1,25 @@
+.outer-container{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: rgb(255, 188, 255);
+}
+
+.row-container{
+    min-width: 80vw;
+    min-height: 60vh;
+}
+
+.left-col {
+    background-image: linear-gradient(rgb(167, 0, 106), rgb(122, 1, 122));
+}
+
+.right-col {
+    background-image: linear-gradient( rgb(122, 1, 122), rgb(167, 0, 106));
+}
+
+.list-group-container {
+    overflow-y: auto;
+    height:20rem;
+    border-radius: 5px;
+    background-color: #fff;
+}

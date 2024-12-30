@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, ListGroup } from "react-bootstrap";
-import "./App.css"; // Import the CSS for styling
+import "./App.css"; 
 import { AddPerson } from "./components/AddPerson";
 import { useState } from "react";
 import { ListPerson } from "./components/ListPerson";
@@ -15,14 +15,13 @@ function App() {
   return (
     <>
       <Container
-        className="d-flex justify-content-center align-items-center"
-        style={{ minHeight: "100vh", minWidth: "100vw", backgroundColor: "#bebebe"}}
+        className="outer-container d-flex justify-content-center align-items-center"
       >
-        <Row className="" style={{backgroundColor: "#cecece", minWidth: "80vw", minHeight: "50vh"}}>
-          <Col xs={12} md={6} className="left-col" style={{backgroundColor: "#aeaeae"}}>
+        <Row className="row-container">
+          <Col xs={12} md={6} className="left-col">
             <AddPerson onAddUser={handleAddUser} />
           </Col>
-          <Col xs={12} md={6} className="right-col" style={{backgroundColor: "#eaeaea"}}>
+          <Col xs={12} md={6} className="right-col">
             <ListPerson users={users} />
           </Col>
         </Row>

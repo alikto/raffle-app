@@ -16,6 +16,11 @@ export const AddPerson = ({ onAddUser }) => {
 
   return (
     <Form onSubmit={handleSubmit} className="add-person-form m-5">
+      <Row className="mb-4">
+        <Col xs={12} className="text-center">
+          <h3 className="text-light">Add New Person</h3>
+        </Col>
+      </Row>
       <Row className="mb-3">
         <Col xs={12}>
           <Form.Group controlId="name">
