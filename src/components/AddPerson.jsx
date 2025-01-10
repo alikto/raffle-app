@@ -18,14 +18,15 @@ export const AddPerson = ({ onAddUser }) => {
     <Form onSubmit={handleSubmit} className="add-person-form m-5">
       <Row className="mb-4">
         <Col xs={12} className="text-center">
-          <h3 className="text-light">Add New Person</h3>
+          <h2 className="text-light">Yeni Kişi Ekle</h2>
         </Col>
       </Row>
       <Row className="mb-3">
         <Col xs={12}>
           <Form.Group controlId="name">
-            <Form.Label className="text-light">Name</Form.Label>
+            <Form.Label className="text-light">İsim</Form.Label>
             <Form.Control
+              className="input-box"
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -38,8 +39,9 @@ export const AddPerson = ({ onAddUser }) => {
       <Row className="mb-5">
         <Col xs={12}>
           <Form.Group controlId="email">
-            <Form.Label className="text-light">Email</Form.Label>
+            <Form.Label className="text-light">E-mail</Form.Label>
             <Form.Control
+              className="input-box"
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -52,7 +54,7 @@ export const AddPerson = ({ onAddUser }) => {
       <Row>
         <Col xs={12} className="d-flex justify-content-end">
           <Button type="submit" variant="primary">
-            Add
+            Ekle
           </Button>
         </Col>
       </Row>

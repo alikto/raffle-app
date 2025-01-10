@@ -1,25 +1,81 @@
-.outer-container{
-    min-height: 100vh;
-    min-width: 100vw;
-    background-color: rgb(255, 188, 255);
+.outer-container {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: rgb(255, 188, 255);
 }
 
-.row-container{
-    min-width: 80vw;
-    min-height: 60vh;
+.input-box {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+}
+
+.row-container {
+  min-width: 80vw;
+  min-height: 60vh;
 }
 
 .left-col {
-    background-image: linear-gradient(rgb(167, 0, 106), rgb(122, 1, 122));
+  background-image: linear-gradient(rgb(170, 1, 100), rgb(90, 0, 90));
+  box-shadow: 0px 0px 20px rgb(90, 0, 90);
 }
 
-.right-col {
-    background-image: linear-gradient( rgb(122, 1, 122), rgb(167, 0, 106));
+.right-col,
+.main-col {
+  background-image: linear-gradient(rgb(90, 0, 90), rgb(170, 1, 100));
+  box-shadow: 0px 0px 20px rgb(90, 0, 90);
 }
 
 .list-group-container {
-    overflow-y: auto;
-    height:20rem;
-    border-radius: 5px;
-    background-color: #fff;
+  overflow-y: auto;
+  height: 15rem;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
+
+.list-item {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+  }
+
+.success-modal {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.success-modal .modal-content {
+  background-image: linear-gradient(rgb(90, 0, 90), rgb(170, 1, 100));
+  border-radius: 5px;
+  color: rgb(253, 208, 234);
+  box-shadow: 0px 0px 20px rgb(255, 116, 197);
+}
+
+.success-modal .modal-header {
+  color: white;
+  border: none;
+}
+
+.success-modal .modal-footer {
+  border-top: none;
+  border: none;
+}
+
+.btn-primary {
+  background-color: rgb(230, 200, 255);
+  color: rgb(90, 0, 90);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: rgb(190, 120, 255);
+}
+
+.btn-secondary {
+  background-color: rgb(90, 0, 90);
+  color: white;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: rgb(138, 45, 138);
+}
+
+
