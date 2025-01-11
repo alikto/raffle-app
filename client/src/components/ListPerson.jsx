@@ -5,7 +5,8 @@ import { SuccessMailModal } from "./SuccessMailModal";
 export const ListPerson = ({ users, onBack }) => {
   const [showModal, setShowModal] = useState(false);
 
-  const handleSendMail = () => {
+  const handleSendMail = async () => {
+    console.log(users)
     setShowModal(true);
   };
 
