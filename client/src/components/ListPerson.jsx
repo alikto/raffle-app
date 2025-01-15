@@ -1,12 +1,19 @@
 import React, { useState } from "react";
 import { Container, Row, Col, ListGroup, ListGroupItem, Button, } from "react-bootstrap";
 import { SuccessMailModal } from "./SuccessMailModal";
+import { generateRaffleMatches } from '../utils/raffle';
+import { sendRaffleEmails } from '../services/emailService';
 
-export const ListPerson = ({ users, onBack }) => {
+export const ListPerson = ({ users, onBack, onClearUsers }) => {
   const [showModal, setShowModal] = useState(false);
 
   const handleSendMail = async () => {
-    console.log(users)
+    const matches = generateRaffleMatches(users);
+    console.log('Generated raffle matches:', matches);
+
+    await sendRaffleEmails(matches);
+    onClearUsers();
+    
     setShowModal(true);
   };
 

@@ -16,6 +16,10 @@ function App() {
     setShowContainer(!showContainer);
   };
 
+  const clearUsersList = () => {
+    setUsers([]);
+  };
+
   return (
     <>
       {showContainer ? (
@@ -25,7 +29,7 @@ function App() {
               <AddPerson onAddUser={handleAddUser} />
             </Col>
             <Col xs={12} md={6} className="right-col">
-              <ListPerson users={users} onBack={toggleContainer} />
+              <ListPerson users={users} onBack={toggleContainer} onClearUsers={clearUsersList} />
             </Col>
           </Row>
         </Container>
