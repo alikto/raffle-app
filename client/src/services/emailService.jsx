@@ -2,7 +2,7 @@ export const sendRaffleEmails = async (matches) => {
     try {
       // each match (giver, receiver)
       for (const match of matches) {
-        const response = await fetch('http://localhost:5000/api/emails/send', {
+        const response = await fetch('https://raffle-app-service.onrender.com/api/emails/send-emails', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
